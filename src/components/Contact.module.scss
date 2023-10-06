@@ -1,0 +1,80 @@
+@import '../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: $light;
+}
+
+.container {
+	width: 100%;
+	height: calc(100vh - #{$headerHeight});
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.toptext {
+		text-align: center;
+		font-family: 'ClashDisplay-Semibold';
+		font-size: 2.9vh;
+		margin-bottom: 2vh;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+		@include breakpoint(md) {
+			text-align: center;
+			font-family: 'ClashDisplay-Semibold';
+			font-size: 80px;
+			margin-bottom: 50px;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+	}
+
+	.midtext {
+		text-align: center;
+		font-family: 'ClashDisplay-Semibold';
+		font-size: 2.9vh;
+		margin-bottom: -0.2vh;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+		@include breakpoint(md) {
+			text-align: center;
+			font-family: 'ClashDisplay-Semibold';
+			font-size: 80px;
+			margin-bottom: 1vhpx;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+	}
+
+	.number {
+		text-align: center;
+		font-family: 'ClashDisplay-Bold';
+		font-size: 4.9vh;
+		margin-bottom: 1vh;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+		@include breakpoint(md) {
+			text-align: center;
+			font-family: 'ClashDisplay-Bold';
+			font-size: 80px;
+			margin-bottom: 50px;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+	}
+
+	.email {
+		text-align: center;
+		font-family: 'ClashDisplay-Bold';
+		font-size: 2.2vh;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+		@include breakpoint(md) {
+			text-align: center;
+			font-family: 'ClashDisplay-Bold';
+			font-size: 80px;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+	}
+}

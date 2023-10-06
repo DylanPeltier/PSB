@@ -1,0 +1,272 @@
+@import './../styles/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;1,900&display=swap');
+
+
+.page {
+	width: 100%;
+	height: calc(100vh - #{$headerHeight});
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+
+	.page::-webkit-scrollbar {
+		display: none;
+	}
+
+	.section::-webkit-scrollbar {
+		display: none;
+	}
+
+	.section {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: calc(100vh);
+		gap: 50px;
+		scroll-snap-align: start;
+		background-image: url('../imgs/boat.jpg');
+		background-position: center;
+		background-size: cover;
+	}
+
+	.section1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: calc(100vh);
+		gap: 50px;
+		scroll-snap-align: start;
+		background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../imgs/building.webp');
+		background-position: center;
+		background-size: cover;
+
+		@include breakpoint(md) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: calc(100vh);
+			gap: 50px;
+			scroll-snap-align: start;
+			background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../imgs/building.webp');
+			background-position: center;
+			background-size: cover;
+		}
+	}
+
+	.section2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: calc(100vh - #{$headerHeight});
+		gap: 50px;
+		scroll-snap-align: start;
+		background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../imgs/car.webp');
+		background-position: center;
+		background-size: cover;
+	}
+
+	.section3 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: calc(100vh - #{$headerHeight});
+		gap: 50px;
+		scroll-snap-align: start;
+		background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../imgs/tube.webp');
+		background-position: center;
+		background-size: cover;
+	}
+
+	.section4 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: calc(100vh - #{$headerHeight});
+		gap: 50px;
+		scroll-snap-align: start;
+		background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../imgs/boat.webp');
+		background-position: center;
+		background-size: cover;
+	}
+	.section5 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: calc(100vh - #{$headerHeight});
+		gap: 50px;
+		scroll-snap-align: start;
+		background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../imgs/owner.webp');
+		background-position: center;
+		background-size: cover;
+	}
+
+	.text_wrapper {
+		// margin-top: $headerHeight;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 90vw;
+
+		@include breakpoint(md) {
+			// margin-top: $headerHeight;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 50%;
+		}
+	}
+
+	.text_wrapperlg {
+		// margin-top: $headerHeight;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 90vw;
+
+		@include breakpoint(md) {
+			// margin-top: $headerHeight;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 50%;
+		}
+	}
+
+	.text_wrapperown {
+		// margin-top: $headerHeight;
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		justify-content: center;
+		width: 90vw;
+
+		@include breakpoint(md) {
+			// margin-top: $headerHeight;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 50%;
+		}
+	}
+
+	.text_wrapper h1 {
+		font-size: 5vh;
+		text-align: center;
+		font-family: 'ClashDisplay-Bold';
+		color: #FFF;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+		@include breakpoint(md) {
+			font-size: 80px;
+			text-align: center;
+			font-family: 'ClashDisplay-Bold';
+			color: #FFF;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+	}
+
+	.text_wrapperlg h1 {
+		font-size: 5vh;
+		text-align: center;
+		font-family: 'ClashDisplay-Bold';
+		color: #FFF;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+		@include breakpoint(md) {
+			font-size: 80px;
+			text-align: center;
+			font-family: 'ClashDisplay-Bold';
+			color: #FFF;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+	}
+
+	.text_wrapperown h1 {
+		font-size: 4.5vh;
+		text-align: left;
+		font-family: 'ClashDisplay-Bold';
+		color: #FFF;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		margin-bottom: 2vh;
+		line-height: 95%;
+
+		@include breakpoint(md) {
+			font-size: 80px;
+			text-align: left;
+			font-family: 'ClashDisplay-Bold';
+			color: #FFF;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+	}
+
+	.text_wrapper p {
+		font-size: 3.5vh;
+		text-align: center;
+		line-height: 90%;
+		font-family: 'ClashDisplay-Medium';
+		color: #FFF;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+		@include breakpoint(md) {
+			font-size: 50px;
+			text-align: center;
+			line-height: 90%;
+			font-family: 'ClashDisplay-Medium';
+			color: #FFF;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+	}
+
+	.text_wrapperlg p {
+		font-size: 3.5vh;
+		text-align: center;
+		line-height: 90%;
+		font-family: 'ClashDisplay-Medium';
+		color: #FFF;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+		@include breakpoint(md) {
+			font-size: 50px;
+			text-align: center;
+			line-height: 90%;
+			font-family: 'ClashDisplay-Medium';
+			color: #FFF;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+	}
+
+	.text_wrapperown p {
+		font-size: 3.5vh;
+		text-align: left;
+		line-height: 90%;
+		font-family: 'ClashDisplay-Medium';
+		color: #FFF;
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+		@include breakpoint(md) {
+			font-size: 50px;
+			text-align: left;
+			line-height: 90%;
+			font-family: 'ClashDisplay-Medium';
+			color: #FFF;
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+	}
+}
+
+.page::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
