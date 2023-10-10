@@ -17,7 +17,7 @@ const About = () => {
 			<div className={classes.section2}>
 				<div className={classes.text_wrapperlg}>
 					<h1>AUTOMOTIVE</h1>
-					<p>We can remove paint, rust, body filler and powder coating to allow you to finish your project quicker and more efficient then sanding by hand.</p>
+					<p>We can remove paint, rust, body filler and powder coating to allow you to finish your project quicker and more efficient than sanding by hand.</p>
 				</div>
 			</div>
 			<div className={classes.section3}>
@@ -29,12 +29,12 @@ const About = () => {
 			<div className={classes.section4}>
 				<div className={classes.text_wrapper}>
 					<h1>FLEETS</h1>
-					<p>We can clean and stripe fleet trucks, buses, railroad cars, ships, barges and anti fowl from boats.</p>
+					<p>We can clean and strip fleet trucks, buses, railroad cars, ships, barges and anti-foul from boats.</p>
 				</div>
 			</div>
 			<div className={classes.section5}>
 				<div className={classes.text_wrapperown}>
-					<h1>MESSAGE FROM THE OWNER</h1>
+					<h1>MESSAGE FROM THE OWNER -</h1>
 					<p>"After years of seeing what a restored car or an old piece of equipment can look like I thought it would be nice to try and be part of that restoration so I have opened a business that cleans and removes rust, dirt, grim and graffiti to start the restoration process. We service from Chatham-Kent to Essex and all surrounding areas.”</p>
 				</div>
 			</div>
