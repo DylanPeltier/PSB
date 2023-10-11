@@ -10,71 +10,110 @@
 }
 
 .container {
-	width: 100%;
+	width: 100vw;
 	height: calc(100vh - #{$headerHeight});
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
+	// background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 
 	.toptext {
-		text-align: center;
-		font-family: 'ClashDisplay-Semibold';
-		font-size: 2.9vh;
-		margin-bottom: 2vh;
-		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-		@include breakpoint(md) {
-			text-align: center;
-			font-family: 'ClashDisplay-Semibold';
-			font-size: 80px;
-			margin-bottom: 50px;
-			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-		}
-	}
-
-	.midtext {
-		text-align: center;
-		font-family: 'ClashDisplay-Semibold';
-		font-size: 2.9vh;
-		margin-bottom: -0.2vh;
-		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-		@include breakpoint(md) {
-			text-align: center;
-			font-family: 'ClashDisplay-Semibold';
-			font-size: 80px;
-			margin-bottom: 1vhpx;
-			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-		}
-	}
-
-	.number {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		text-align: center;
 		font-family: 'ClashDisplay-Bold';
-		font-size: 4.9vh;
-		margin-bottom: 1vh;
-		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		font-size: 5vh;
+		width: 100%;
+		line-height: 90%;
+		margin-bottom: 3rem;
 
-		@include breakpoint(md) {
-			text-align: center;
-			font-family: 'ClashDisplay-Bold';
-			font-size: 80px;
-			margin-bottom: 50px;
-			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-		}
+          
+          /** TEXT GRADIENT */ color: #f5f7fa; background-image: -webkit-linear-gradient(0deg, #f5f7fa 0%, #f0f6ff 100%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+          
+        
+
+		  @include breakpoint(md) {
+			font-size: 8vh;
+		  }
+          
+        
 	}
 
-	.email {
-		text-align: center;
-		font-family: 'ClashDisplay-Bold';
-		font-size: 2.2vh;
-		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	.main {
+		width: 80vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 
-		@include breakpoint(md) {
+		.phonenum {
+			width: 100%;
 			text-align: center;
-			font-family: 'ClashDisplay-Bold';
-			font-size: 80px;
-			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+			font-family: 'ClashDisplay-SemiBold';
+			font-size: 4vh;
+
+          
+          /** TEXT GRADIENT */ color: #f5f7fa; background-image: -webkit-linear-gradient(0deg, #f5f7fa 0%, #f0f6ff 100%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+          
+        
+          
+		  @include breakpoint(md) {
+			font-size: 8vh;
+		  }
+        
+		}
+
+		img {
+			filter: invert(100%) sepia(0%) saturate(7467%) hue-rotate(121deg) brightness(119%) contrast(101%);
+			margin-right: 1rem;
+			margin-top: 0.5rem;
+			transform: scaleX(-1);
+		}
+
+		.sub {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin: 30px 50px 30px 50px;
+
+			p {
+				text-align: center;
+				font-family: 'ClashDisplay-SemiBold';
+				font-size: 3.3vh;
+				line-height: 90%;
+
+				@include breakpoint(md) {
+					font-size: 7vh;
+				  }
+
+          
+          /** TEXT GRADIENT */ color: #f5f7fa; background-image: -webkit-linear-gradient(0deg, #f5f7fa 0%, #f0f6ff 100%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+          
+        
+          
+        
+			}
+
+			h2 {
+				text-align: center;
+				font-family: 'ClashDisplay-Medium';
+				font-size: 4vh;
+				line-height: 90%;
+				margin-bottom: 1rem;
+
+          
+          /** TEXT GRADIENT */ color: #f5f7fa; background-image: -webkit-linear-gradient(0deg, #f5f7fa 0%, #f0f6ff 100%); background-clip: text; -webkit-background-clip: text; text-fill-color: transparent; -webkit-text-fill-color: transparent;
+          
+        
+
+		  @include breakpoint(md) {
+			font-size: 6vh;
+		  }
+			}
 		}
 	}
 }

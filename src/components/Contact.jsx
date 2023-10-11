@@ -5,12 +5,16 @@ const Contact = () => {
 
 	return (
 		<div className={classes.container}>
-			<div className={classes.text_wrapper}>
-				<h1 className={classes.toptext}>Need to get in touch with us?</h1>
-				<h1 className={classes.midtext}>SHOOT  US A CALL OR TEXT</h1>
-				<h1 className={classes.number}>(519)-809-1263</h1>
-				<h1 className={classes.midtext}>OR EMAIL US AT</h1>
-				<h1 className={classes.email}>precisionsandblasting81@gmail.com</h1>
+			<h1 className={classes.toptext}>Need to get in<br></br>touch with us?</h1>
+			<div className={classes.main}>
+				<div className={classes.sub}>
+					<h2>Call or text us at</h2>
+					<h1 className={classes.phonenum}>519-123-456</h1>
+				</div>
+				<div className={classes.sub}>
+					<h2>Email us at</h2>
+					<p>precisionsandblasting81<br></br>@gmail.com</p>
+				</div>
 			</div>
 		</div>
 	);
