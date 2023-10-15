@@ -9,7 +9,7 @@ const Contact = () => {
 			<div className={classes.main}>
 				<div className={classes.sub}>
 					<h2>Call or text us at</h2>
-					<h1 className={classes.phonenum}>519-123-456</h1>
+					<h1 className={classes.phonenum}>519-809-1263</h1>
 				</div>
 				<div className={classes.sub}>
 					<h2>Email us at</h2>
