@@ -42,7 +42,7 @@ export default function Slider() {
 						className={slideIndex === index + 1 ? 'slide active-anim' : 'slide'}
 					>
 						<img
-							src={process.env.PUBLIC_URL + `/Imgs/im${index + 1}.webp`}
+							src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.jpeg`}
 							alt=""
 						/>
 					</div>
@@ -52,7 +52,7 @@ export default function Slider() {
 			<BtnSlider moveSlide={prevSlide} direction={'prev'} />
 
 			<div className="container-dots">
-				{Array.from({ length: 4 }).map((item, index) => (
+				{Array.from({ length: 11 }).map((item, index) => (
 					<div
 						onClick={() => moveDot(index + 1)}
 						className={slideIndex === index + 1 ? 'dot active' : 'dot'}
